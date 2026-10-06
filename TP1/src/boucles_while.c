@@ -3,9 +3,11 @@
 int main()
 {
     int compteur = 5;
-    for (int i = 1; i <= compteur; i++)
+    int i = 1;
+    while (i <= compteur)
     {
-        for (int j = 1; j <= i; j++)
+        int j = 1;
+        while (j <= i)
         {
             if (j == 1 || j == i || i == compteur)
             {
@@ -15,8 +17,10 @@ int main()
             {
                 printf("# ");
             }
+            j++;
         }
         printf("\n");
+        i++;
     }
     return 0;
 }
